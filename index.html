@@ -5,52 +5,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css" />
     <title>Студія</title>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"/>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="/" class="logo"><span>Web</span>Studio</a>
+        <nav class="navigation">
+            <a href="/" class="logo-up link">Web<span class="logo-up-black">Studio</span></a>
             <ul>
-                <li><a href="/">Студія</a></li>
-                <li><a href="./portfolio.html" target="_blank">Портфоліо</a></li>
-                <li><a href="------">Контакти</a></li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li><a class="link-studio link" href="/">Студія</a></li>
+                <li><a class="link-portfolio link" href="./portfolio.html" target="_blank">Портфоліо</a></li>
+                <li><a class="link-contacts link" href="------">Контакти</a></li>
+                <li><a class="link-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a  class="link-phone link"href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </nav>
     </header>
 
-    <div>
+    <maim>
+        <div class="hero-image">
+            <div class="hero-text">
         <h1>Ефективні рішення для вашого бізнесу</h1>
-        <button>Замовити послугу</button>
     </div>
+    <div>
+        <button cursor="pointer" class="hero-button"><div class="hero-button-text">Замовити послугу</div></button>
+            </div>
+        </div>
+    </maim>
     <ul>
-        <li>
+        <li class="list-items">
             <h2>УВАГА ДО ДЕТАЛЕЙ</h2>
             <p>
                 Ідейні міркування, та навіть початок повсякденної роботи з формування
                 позиції.
             </p>
         </li>
-        <li>
+        <li class="list-items">
             <h2>ПУНКТУАЛЬНІСТЬ</h2>
             <p>
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у
                 себе.
             </p>
-        </li>
+        </li class="list-items">
         <li>
             <h2>ПЛАНУВАННЯ</h2>
 
             <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-        </li>
+        </li class="list-items">
         <li>
             <h2>СУЧАСНІ ТЕХНОЛОГІЇ</h2>
             <p>
@@ -100,15 +104,17 @@
     </ul>
 </body>
 <footer>
-    <h3 class=""><span>Web</span>Studio</h3>
+    <section class="footer">
+    <h3 class="logo-down">Web<span class="logo-down-white">Studio</span></h3>
     <address>
         <ul>
-            <li><a href="https://goo.gl/maps/u1oqXH6kKNKtkEkc6" target="_blanck" rel:="noopener nofolow noregerrer"> м.
+            <li><a  class="link" href="https://goo.gl/maps/u1oqXH6kKNKtkEkc6" target="_blanck" rel:="noopener nofolow noregerrer"> м.
                     Київ, пр-т Лесі Українки, 26</a></li>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </address>
+    </section>
 </footer>
 
 </html>
