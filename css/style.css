@@ -7,10 +7,16 @@ body {
 }
 
 
-a.link {
+a {
     text-decoration: none;
     color: currentColor;
 }
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
 
 li {
     list-style-type: none;
@@ -53,7 +59,11 @@ li {
     color: #2196F3
 }
 
-.contact-footer:hover {
+.mail-footer:hover {
+    color: #2196F3
+}
+
+.phone-footer:hover {
     color: #2196F3
 }
 
@@ -194,15 +204,6 @@ button:focus {
 
 
 
-
-.logo-down-white {
-    color: white;
-}
-
-.logo-up-black {
-    color: black;
-}
-
 .logo {
     font-weight: 700;
     color: currentColor;
@@ -212,6 +213,15 @@ button:focus {
     letter-spacing: 0.03em;
     color: #2196F3;
 }
+
+.logo-down-white {
+    color: white;
+}
+
+.logo-up-black {
+    color: black;
+}
+
 
 /* Buttons portfolio */
 
@@ -504,9 +514,32 @@ button:focus {
 }
 
 .adress-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+
+    letter-spacing: 0.03em;
+
     color: #FFFFFF;
 }
 
-.contact-footer {
-    color: rgba(255, 255, 255, 0.6)
+.mail-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.phone-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
 }
