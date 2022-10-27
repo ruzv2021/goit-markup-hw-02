@@ -1,11 +1,18 @@
+:root {
+    --main-color: #212121;
+    --second-color: color: #757575;
+    --accent-color: #2196F3;
+    /* --button-first-color: #ffffff;
+    --button-second-color: #303030; */
+}
+
 body {
     background-color: white;
-    color: #212121;
+    color: var(--main-color);
     font-family: 'Roboto', sans-serif;
     font-style: normal;
 
 }
-
 
 a {
     text-decoration: none;
@@ -17,7 +24,6 @@ a {
     color: currentColor;
 }
 
-
 li {
     list-style-type: none;
 }
@@ -27,48 +33,28 @@ li {
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--main-color);
 
 }
 
-.link-studio:hover {
-    color: #2196F3;
-}
-
-.link-portfolio:hover {
-    color: #2196F3;
-}
-
-.link-studio:hover {
-    color: #2196F3;
-}
-
-.link-contacts:hover {
-    color: #2196F3;
-}
-
-.link-email:hover {
-    color: #2196F3;
-}
-
-.link-phone:hover {
-    color: #2196F3
-}
-
-.adress-footer:hover {
-    color: #2196F3
-}
-
-.mail-footer:hover {
-    color: #2196F3
-}
-
+.link-studio:hover,
+.link-portfolio:hover,
+.link-contacts:hover,
+.link-email:hover,
+.link-phone:hover,
+.adress-footer:hover,
+.mail-footer:hover,
 .phone-footer:hover {
-    color: #2196F3
+    color: var(--accent-color);
+}
+.link-studio{
+    color: var();
 }
 
-
-
+.link-studio-blue,
+.link-portfolio-blue{
+    color: var(--accent-color);
+}
 .hero-image {
 
     background: #2F303A;
@@ -99,7 +85,7 @@ li {
 }
 
 button:hover {
-    background-color: #2196F3;
+    background-color: var(--accent-color);
 }
 
 button:focus {
@@ -139,64 +125,29 @@ button:focus {
     letter-spacing: 0.03em;
 }
 
-.first-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
+.first-name,
+.second-name,
+.third-name,
+.fourth-name,
+
+{
+font-weight: 500;
+font-size: 16px;
+line-height: calc(19/16);
+letter-spacing: 0.03em;
 }
 
-.second-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-}
 
-.third-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-}
 
-.fourth-name {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-}
-
-.member-position-one {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.member-position-two {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.member-position-three {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(19/16);
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
+.member-position-one,
+.member-position-two,
+.member-position-three,
 .member-position-four {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19/16);
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--s);
 }
 
 
@@ -231,43 +182,12 @@ button:focus {
     cursor: pointer;
 }
 
-.button-one {
-    font-weight: 500;
-    background: #F5F4FA;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26/16);
-}
-
-.button-two {
-    font-weight: 500;
-    background: #F5F4FA;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26/16);
-}
-
-.button-three {
-    font-weight: 500;
-    background: #F5F4FA;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26/16);
-}
-
-.button-four {
-    font-weight: 500;
-    background: #F5F4FA;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26/16);
-}
-
+.button-one,
+.button-two,
+.button-three,
+.button-four,
 .button-five {
+
     font-weight: 500;
     background: #F5F4FA;
     border-radius: 4px;
@@ -275,64 +195,14 @@ button:focus {
     font-size: 16px;
     line-height: calc(26/16);
 }
+
 
 /* under hero studio page */
 
 
-.item-heading-one>h2 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.item-heading-one>p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.item-heading-two>h2 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.item-heading-two>p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.item-heading-three>h2 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.item-heading-three>p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
+.item-heading-one>h2,
+.item-heading-two>h2,
+.item-heading-three>h2,
 .item-heading-four>h2 {
     font-weight: 700;
     font-size: 14px;
@@ -341,149 +211,31 @@ button:focus {
     text-transform: uppercase;
 }
 
+.item-heading-one>p,
+.item-heading-two>p,
+.item-heading-three>p,
 .item-heading-four>p {
     font-weight: 400;
     font-size: 14px;
-    line-height: calc(24/14);
+    line-height: 24px;
+
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: var(--second-color);
 }
 
 /* Projects portfolio */
 
 
 
-
-.technok {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-}
-
-.technok-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.poster {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-}
-
-.poster-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-
-.restaurant {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-}
-
-.restaurant-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.proect-prime {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-}
-
-.proect-prime-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.proect-box {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-}
-
-.proect-box-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.inspiration {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-}
-
-.inspiration-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.limited {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-}
-
-.limited-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.proect-lab {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: calc(36/18);
-    letter-spacing: 0.06em;
-}
-
-.proect-lab-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
+.technok,
+.poster,
+.restaurant,
+.proect-prime,
+.proect-box,
+.inspiration,
+.limited,
+.proect-lab,
 .groving {
     font-weight: 700;
     font-size: 18px;
@@ -491,20 +243,26 @@ button:focus {
     letter-spacing: 0.06em;
 }
 
+.technok-text,
+.poster-text,
+.restaurant-text,
+.proect-prime-text,
+.proect-box-text,
+.inspiration-text,
+.limited-text,
+.proect-lab-text,
 .groving-text {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: var(--second-color);
 }
 
 
 
 /* подвал */
-
-
 
 
 
@@ -524,16 +282,7 @@ button:focus {
     color: #FFFFFF;
 }
 
-.mail-footer {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;
-
-    color: rgba(255, 255, 255, 0.6);
-}
-
+.mail-footer,
 .phone-footer {
     font-style: normal;
     font-weight: 400;
